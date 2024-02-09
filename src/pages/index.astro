@@ -1,17 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { ViewTransitions } from "astro:transitions";
-import Aside from "../components/Aside.astro";
+import Aside from "../components/Aside.jsx";
 import Banner from "../components/Banner.astro";
 import NextButton from "../components/NextButton.astro";
+
+import { vinos } from "../lib/data";
 ---
 
 <Layout title="Fine-Wine">
   <section class="grid grid-cols-2">
     <Aside />
     <Banner />
-    <NextButton />
   </section>
+  <NextButton />
 </Layout>
 
 <style></style>
